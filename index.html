@@ -2,6 +2,78 @@
 <html class="no-js" lang="en">
 <head>
 
+    <style>
+        h1 {text-align: center;}
+        .subhead {text-align: center;}
+        .span {text-align: center;}
+        .icon{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+     }
+
+
+     .hobbyicon{
+        text-align: center;
+
+     }
+
+    .profile{
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+     .intro {text-align: left;}
+     .lead, .lead2 {text-align: center;}
+     .subhead {text-align: left;}
+     
+     .lead, .lead2 {
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .lead:hover,
+    .lead:focus,
+    .lead:active {
+      color: #f9861a;
+    }
+    
+    .lead:hover,
+    .lead:active {
+      outline: 0;
+    }
+    
+    
+    .lead2 {
+      font-family: "Gothic A1", sans-serif;
+      font-weight: 300;
+      font-size: 2.4rem;
+      line-height: 1.833;
+      margin-bottom: 3.6rem;
+      color: #000000;
+    }
+    
+    
+    
+    
+    .lead2:hover,
+    .lead2:focus,
+    .lead2:active {
+      color: #857aff;
+    }
+    
+    .lead2:hover,
+    .lead2:active {
+      outline: 0;
+    }
+    
+    
+    a::selection,span::selection,p::selection,h1::selection,h2::selection,h3::selection,.lead::selection{
+        background-color: #f9861a;
+        color:antiquewhite;
+    }
+</style>
+
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
@@ -56,7 +128,7 @@
                 <ul class="header-nav">
                     <li><a class="smoothscroll" href="#hero">Home</a></li>
                     <li><a class="smoothscroll" href="#about">About Me</a></li>
-                    <li><a class="smoothscroll" href="#interest">Interests</a></li>
+                    <li><a class="smoothscroll" href="#about">Interests</a></li>
                     <li><a class="smoothscroll" href="#contact">Say 你好</a></li>
                     <li><a href="more.html">|     More</li>
                 </ul>
@@ -79,7 +151,7 @@
 
             <div class="column large-full">
 
-                <h1>
+                <h1 class = 'intro'>
                 Hi!
                 I'm <span style="color:#f9861a;">Shubhaankar</span>. <br>
                 I'm an <span style="color:#f9861a;">ML Developer</span> & <span style="color:#f9861a;">Graphics Enthusiast</span> <br>
@@ -136,7 +208,7 @@
 
                     <h3 data-aos="fade-up">Profile</h3>
 
-                    <p data-aos="fade-up">
+                    <p class ="profile" data-aos="fade-up" >
                         I'm a high school junior, tech enthusiast, and student council member from <a href="https://dpsrkp.net" target="_blank">
                         Delhi Public School RK Puram</a> – New Delhi, India. I’m into quizzing, machine learning and related research (particularly in computer vision),
                         and participate in cryptic hunts here and there. I’m a member of my school’s <a href="https://www.qcdpsrkp.xyz" target="_blank">
@@ -152,62 +224,70 @@
     </section>
 <!---------------------------------------------------------------------------------->
 
+
+
+
+
+
     <section id="interest" class="s-about target-section">
         <div class="section-intro" data-aos="fade-up">
 
         
-            <div class="row half-bottom">
+            <div class="row add-bottom">
 
-                <div class="column large-6 tab-full">
-                    <div class="section-intro" data-aos="fade-up">
-                        <h3 class="subhead">Expertise</h3>
-                    </div>
-                    <h3>Hobbies and interests</h3>
-
-                    <ol>
-                        <li>Quizzing</li>
-                        <li>Cryptic Hunts</li>
-                        <li>Philosophy</li>
-                        <li>Food</li>
-
-                
-
+                <div class="column large-full">
+    
+                    <h1 class="display-1">Skills</h1>
+    
+                <!-- <p class="lead">
+                    I specialize mostly in 
+                    </p>-->
+    
                 </div>
-
+    
+            </div>
+    
+            <div class="row">
+    
                 <div class="column large-6 tab-full">
-
-                    <h3>Skills</h3>
+    
                     
-                    <ul class="skill-bars">
-                        <li>
-                        <div class="progress percent95"><span>95%</span></div>
-                        <strong>Tensorflow</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent80"><span>80%</span></div>
-                        <strong>Pytorch</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent90"><span>90%</span></div>
-                        <strong>Python</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent85"><span>85%</span></div>
-                        <strong>Blender 3D</strong>
-                        </li>
-                        <li>
-                        <div class="progress percent85"><span>85%</span></div>
-                        <strong>HTML and CSS</strong>
-                        </li>
-                    </ul>
+                    
+    
+                    
+                    <h3 class="hobbyicon">
+                        <div classname = 'icon'>
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M9 1H1V9H9V6H11V20H15V23H23V15H15V18H13V6H15V9H23V1H15V4H9V1ZM21 3H17V7H21V3ZM17 17H21V21H17V17Z" fill="currentColor" /></svg>
+                        </div>
+                    </h3>
+                    <!--<h3>Machine Learning</h3>-->
+                    <br><p class="lead">Tensorflow</p>
+                    <p class="lead">PyTorch</p>
+                    <p class="lead" id = 'green'>OpenCV</p>
+                    <p class="lead"id = 'blue'>SciKit Learn</p>
+                    <p class="lead"id = 'yellow'>Blender 3D</p><br>
+                
+    
+    
+                </div>
+    
+                <div class="column large-6 tab-full">
+                    <h3 class="hobbyicon">
+    
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 4H18V6H20V8H18V10H16V8H14V6H16V4Z" fill="currentColor" /><path fill-rule="evenodd" clip-rule="evenodd" d="M12 12V6H4V20H18V12H12ZM6 8H10V12H6V8ZM10 14V18H6V14H10ZM16 14V18H12V14H16Z" fill="currentColor" /></svg>              
+                        
+                    </h3>
+                    <!-- <h3>Skills</h3>-->
+                    <br><p class="lead2">3D Modelling</p>
+                    <p class="lead2">Cryptic Hunts and CTFs</p>
+                    <p class="lead2">HTML & CSS</p>
+                    <p class="lead2">SQL</p>
+                    <p class="lead2">Quizzing</p><br>
 
                 </div>
-
-        </div>
-
     </section>
 <!---------------------------------------------------------------------------------->
-            
+   
 <!---------------------------------------------------------------------------------->
 
 
@@ -221,7 +301,7 @@
                     <div class="section-intro" data-aos="fade-up">
                         <h3 class="subhead">Get In Touch</h3>
 
-                        <h1 class="display-1">
+                        <h2 class="display-1">
                         平 me. <br>
                         You can also go to <a href="more.html">More</a>.
                         </h1>
